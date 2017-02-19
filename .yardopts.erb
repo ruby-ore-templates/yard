@@ -1,1 +1,9 @@
---markup <%= @markup %><% if @markup==:markdown %> -M kramdown<% end %> --title "<%= @name %> Documentation" --protected
+--markup <%= @markup %>
+<% if @markup==:markdown %> -M kramdown<% end %>
+--title "<%= @name %> Documentation"
+--protected
+-
+ChangeLog.<%= @markup_ext || '*' %>
+<%- if @license_file -%>
+<%= @license_file %>
+<%- end -%>
