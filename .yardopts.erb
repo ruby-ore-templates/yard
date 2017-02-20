@@ -1,5 +1,5 @@
 --markup <%= @markup %>
-<% if @markup==:markdown %> -M kramdown<% end %>
+<%- if @markup_provider -%>--markup-provider <%= @markup_provider %><%- end -%>
 --title "<%= @name %> Documentation"
 --protected
 -
