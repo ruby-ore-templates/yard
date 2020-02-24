@@ -4,6 +4,3 @@ disable:
 ignore:
   - /doc/
   - /.yardoc/
-
-development_dependencies:
-  yard: ~> 0.9
